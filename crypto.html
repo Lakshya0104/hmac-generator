@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔐 Advanced HMAC Generator</title>
+  <link rel="stylesheet" href="cryptoo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Advanced HMAC Generator</h1>
+    
+    <label for="message">Message</label>
+    <textarea id="message" rows="4" placeholder="Enter your message..."></textarea>
+
+    <label for="secret">Secret Key</label>
+    <input type="text" id="secret" placeholder="Enter your secret key" />
+
+    <label for="algorithm">Select Digest Algorithm</label>
+    <select id="algorithm">
+      <option value="SHA-1">SHA-1</option>
+      <option value="SHA-224">SHA-224</option>
+      <option value="SHA-256">SHA-256</option>
+      <option value="SHA-384">SHA-384</option>
+      <option value="SHA-512">SHA-512</option>
+    </select>
+
+    <button onclick="generateHMAC()">🚀 Compute HMAC</button>
+
+    <div id="output" class="output"></div>
+    <div id="error" class="error"></div>
+  </div>
+
+  <script src="cryp.js"></script>
+</body>
+</html>
